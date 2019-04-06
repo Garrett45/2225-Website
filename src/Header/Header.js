@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../image_resource/RUSTLogoVector.svg';
+import './Header.css'
 
 import {
   Container, Row, Col, Form, Input, Button, Navbar, Nav,
@@ -11,7 +12,7 @@ const AVATAR = 'https://www.gravatar.com/avatar/429e504af19fc3e1cfa5c4326ef3394c
 
 const Header = () => (
   <header>
-    <Navbar fixed="top" color="light" light expand="xs" className="border-bottom border-gray bg-white" style={{ height: 80 }}>
+    <Navbar fixed="top" color="goodblue" dark expand="xs" className="border-bottom border-gray bg-goodblue" style={{ height: 80 }}>
 
       <Container>
         <Row noGutters className="position-relative w-100 align-items-center">
