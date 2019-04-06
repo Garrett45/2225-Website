@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom'
-import Navigator from './Navigator/Navigator.js'
+import Header from './Navigator/Header.js'
 import './Navigator/Navigator.css'
 import Images from './Images/Images.js'
 import './Images/Images.css'
@@ -13,7 +13,7 @@ class App extends Component {
       <BrowserRouter>
       <div className="background">
         <div className="App">
-          <Navigator />
+          <Header />
         </div>
         <div className="carouselouter">
           <div className ="carouselinner">
