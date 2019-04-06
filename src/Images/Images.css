@@ -1,0 +1,7 @@
+.carouselouter img{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    top: 54px;
+    object-fit: contain;
+}
