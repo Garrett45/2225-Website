@@ -7,6 +7,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 app.post('/api/form', (req, res) => {
+    res.send('hello world');
     nodemailer.createTestAccount((err, account) => {
         const htmlEmail = `
             <h3>Contact Details</h3>
@@ -46,6 +47,10 @@ app.post('/api/form', (req, res) => {
         })
     })
 })
+
+app.get('/api/form', function(req, res){
+  res.send('hello world');
+});
 
 const PORT = process.env.PORT || 3001
 

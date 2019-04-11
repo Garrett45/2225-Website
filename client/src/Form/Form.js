@@ -21,19 +21,25 @@ export default class Example extends React.Component {
     }
 
     async handleSubmit(e) {
+        const self = this;
+        console.log('submitted');
         e.preventDefault();
         const { fname, lname, email, message} = this.state
 
-        const form = await axios.post('/api/form', {
+        axios.post('/api/form', {
             fname,
             lname,
             email,
             message
         })
-
-
-        this.setState({fname: '', lname: '', email: '', message: ''})
-
+        .then(function (response){
+            console.log(response);
+            self.setState({fname: '', lname: '', email: '', message: ''},
+                ()=> console.log("cleared form"))
+        })
+        .catch((error) => {
+            console.log(error)
+        })
     }
 
   render() {
@@ -82,7 +88,7 @@ export default class Example extends React.Component {
         </FormGroup>
         <FormGroup row style={{paddingTop: 30}} className="padded">
           <Col sm={{ size: 10, offset: 0 }}>
-            <Button>Submit</Button>
+            <Button >Submit</Button>
           </Col>
         </FormGroup>
       </Form>
