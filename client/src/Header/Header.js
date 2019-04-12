@@ -24,7 +24,7 @@ const Header = () => (
 
         <Col className="d-flex justify-content-xs-start justify-content-lg-center">
           <NavbarBrand className="d-inline-block p-0" href="/" style={{ width: 80 }, {textAlign: "center"}}>
-            <p style={{fontFamily: "Cantarell"}}>Champlin Park Robotics</p>
+            <p style={{fontFamily: "Myriad Pro"}}>Champlin Park Robotics</p>
           </NavbarBrand>
         </Col>
 
@@ -50,6 +50,9 @@ const Header = () => (
                   <DropdownItem>What is FIRST Robotics?</DropdownItem>
                   <DropdownItem>2225 RUST</DropdownItem>
                   <DropdownItem>Community Involvement</DropdownItem>
+                  <DropdownItem href = "https://github.com/robot-rover/frc2225-2019/" target = "_blank">GitHub</DropdownItem>
+                  <DropdownItem href = "https://www.thebluealliance.com/team/2225" target = "_blank">The Blue Alliance</DropdownItem>
+
                 </DropdownMenu>
               </UncontrolledDropdown>
 
